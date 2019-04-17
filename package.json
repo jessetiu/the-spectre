@@ -1,0 +1,22 @@
+{
+  "name": "the-spectre",
+  "version": "1.0.0",
+  "description": "JavaScript Game using Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessetiu/the-spectre.git"
+  },
+  "author": "Jesse Tiu",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jessetiu/the-spectre/issues"
+  },
+  "homepage": "https://github.com/jessetiu/the-spectre#readme",
+  "devDependencies": {
+    "electron": "^4.1.4"
+  }
+}
