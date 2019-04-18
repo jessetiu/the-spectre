@@ -1,7 +1,7 @@
 const {app, BrowserWindow, ipcMain} = require('electron')
 
 function createWindow() {
-  let window = new BrowserWindow({width: 800, height: 600})
+  let window = new BrowserWindow({title: 'The Spectre', width: 800, height: 600})
   window.loadFile('index.html')
 
   // // Opens dev tools (inspect page)
