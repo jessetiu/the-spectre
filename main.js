@@ -1,16 +1,21 @@
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, ipcMain} = require('electron')
 
 function createWindow() {
   let window = new BrowserWindow({width: 800, height: 600})
   window.loadFile('index.html')
 
-  window.webContents.openDevTools()
+  // // Opens dev tools (inspect page)
+  // window.webContents.openDevTools()
   
   // // For closing a single window. 
   // // Not needed, because there will only be one window.
   // window.on('closed', () => {
   //   window = null
   // })
+
+  window.on('ready-to-show', () => {
+    window.show()
+  })
 }
 
 app.on('ready', createWindow)
